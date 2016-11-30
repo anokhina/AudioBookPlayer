@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment" >
+
+     <SeekBar 
+        android:id="@+id/pbarFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" 
+        android:layout_below="@+id/tvTitle"
+         />
+     
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="Title:" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbarFiles"
+        android:padding="0dp" >
+
+        <!-- 
+            android:text="@string/open"
+            android:text="@string/sd"
+            android:text="@string/pause"
+            android:text="@string/resume"
+            android:text="@string/stop"
+            android:text="@string/backward"
+            android:text="@string/forward"
+            android:text="@string/info"
+        
+         -->
+        
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnOpen"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="onClickOpen"
+            android:padding="5dp"
+            android:src="@drawable/folder_10" />
+
+	    <ToggleButton
+			android:background="@drawable/button_selector"
+	        android:id="@+id/chbLoop"
+            android:layout_weight="1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:checked="true"
+	        android:gravity="center"
+	        android:textOff=""
+	        android:textOn="Loop" 
+            android:padding="5dp"
+	        />
+        
+     	<AutoCompleteTextView
+     		android:background="@drawable/button_selector"
+		    android:id="@+id/actvTitle"
+            android:layout_weight="10"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:text="UTF-8"
+		    android:hint="tag encoding"
+            android:padding="5dp"
+		    />
+           
+        <!-- Button
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnTitle"
+	        android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:text="TITLE" 
+            /-->
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:padding="0dp" 
+        android:layout_below="@+id/linearLayout1" >
+
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnStartSD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/pause_play" 
+            android:padding="5dp"
+            />
+        
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/stop" 
+            />
+        
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnFirstRecord"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/back" 
+            />
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnPrev"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/previous" 
+            />
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnBackward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/rewind_1" 
+            />
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnForward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/fast_forward_1" 
+            />
+        <ImageButton
+			android:background="@drawable/button_selector"
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@drawable/skip" 
+            />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:text="Status:" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/pbarSound"
+        android:src="@drawable/picture" />
+    
+     <!--ProgressBar
+        android:id="@+id/pbarSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginRight="5dp" 
+        android:layout_below="@+id/textView1"
+         /-->
+     <SeekBar 
+        android:id="@+id/pbarSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" 
+        android:layout_below="@+id/textView1"
+         />
+     
+</RelativeLayout>

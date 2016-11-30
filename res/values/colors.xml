@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright 2016 Veronica Anokhina.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<resources>
+<color name="white">#ffffffff</color>
+
+<color name="Black">#000000</color>
+<color name="c000000">#000000</color>
+
+<color name="Navy">#000080</color>
+<color name="c000080">#000080</color>
+
+<color name="DarkBlue">#00008B</color>
+<color name="c00008B">#00008B</color>
+
+<color name="MediumBlue">#0000CD</color>
+<color name="c0000CD">#0000CD</color>
+
+<color name="Blue">#0000FF</color>
+<color name="c0000FF">#0000FF</color>
+
+<color name="DarkGreen">#006400</color>
+<color name="c006400">#006400</color>
+
+<color name="Green">#008000</color>
+<color name="c008000">#008000</color>
+
+<color name="Teal">#008080</color>
+<color name="c008080">#008080</color>
+
+<color name="DarkCyan">#008B8B</color>
+<color name="c008B8B">#008B8B</color>
+
+<color name="DeepSkyBlue">#00BFFF</color>
+<color name="c00BFFF">#00BFFF</color>
+
+<color name="DarkTurquoise">#00CED1</color>
+<color name="c00CED1">#00CED1</color>
+
+<color name="MediumSpringGreen">#00FA9A</color>
+<color name="c00FA9A">#00FA9A</color>
+
+<color name="Lime">#00FF00</color>
+<color name="c00FF00">#00FF00</color>
+
+<color name="SpringGreen">#00FF7F</color>
+<color name="c00FF7F">#00FF7F</color>
+
+<color name="Aqua">#00FFFF</color>
+<color name="Cyan">#00FFFF</color>
+<color name="c00FFFF">#00FFFF</color>
+
+<color name="MidnightBlue">#191970</color>
+<color name="c191970">#191970</color>
+
+<color name="DodgerBlue">#1E90FF</color>
+<color name="c1E90FF">#1E90FF</color>
+
+<color name="LightSeaGreen">#20B2AA</color>
+<color name="c20B2AA">#20B2AA</color>
+
+<color name="ForestGreen">#228B22</color>
+<color name="c228B22">#228B22</color>
+
+<color name="SeaGreen">#2E8B57</color>
+<color name="c2E8B57">#2E8B57</color>
+
+<color name="DarkSlateGray">#2F4F4F</color>
+<color name="DarkSlateGrey">#2F4F4F</color>
+<color name="c2F4F4F">#2F4F4F</color>
+
+<color name="LimeGreen">#32CD32</color>
+<color name="c32CD32">#32CD32</color>
+
+<color name="MediumSeaGreen">#3CB371</color>
+<color name="c3CB371">#3CB371</color>
+
+<color name="Turquoise">#40E0D0</color>
+<color name="c40E0D0">#40E0D0</color>
+
+<color name="RoyalBlue">#4169E1</color>
+<color name="c4169E1">#4169E1</color>
+
+<color name="SteelBlue">#4682B4</color>
+<color name="c4682B4">#4682B4</color>
+
+<color name="DarkSlateBlue">#483D8B</color>
+<color name="c483D8B">#483D8B</color>
+
+<color name="MediumTurquoise">#48D1CC</color>
+<color name="c48D1CC">#48D1CC</color>
+
+<color name="Indigo">#4B0082</color>
+<color name="c4B0082">#4B0082</color>
+
+<color name="DarkOliveGreen">#556B2F</color>
+<color name="c556B2F">#556B2F</color>
+
+<color name="CadetBlue">#5F9EA0</color>
+<color name="c5F9EA0">#5F9EA0</color>
+
+<color name="CornflowerBlue">#6495ED</color>
+<color name="c6495ED">#6495ED</color>
+
+<color name="RebeccaPurple">#663399</color>
+<color name="c663399">#663399</color>
+
+<color name="MediumAquaMarine">#66CDAA</color>
+<color name="c66CDAA">#66CDAA</color>
+
+<color name="DimGray">#696969</color>
+<color name="DimGrey">#696969</color>
+<color name="c696969">#696969</color>
+
+<color name="SlateBlue">#6A5ACD</color>
+<color name="c6A5ACD">#6A5ACD</color>
+
+<color name="OliveDrab">#6B8E23</color>
+<color name="c6B8E23">#6B8E23</color>
+
+<color name="SlateGray">#708090</color>
+<color name="SlateGrey">#708090</color>
+<color name="c708090">#708090</color>
+
+<color name="LightSlateGray">#778899</color>
+<color name="LightSlateGrey">#778899</color>
+<color name="c778899">#778899</color>
+
+<color name="MediumSlateBlue">#7B68EE</color>
+<color name="c7B68EE">#7B68EE</color>
+
+<color name="LawnGreen">#7CFC00</color>
+<color name="c7CFC00">#7CFC00</color>
+
+<color name="Chartreuse">#7FFF00</color>
+<color name="c7FFF00">#7FFF00</color>
+
+<color name="Aquamarine">#7FFFD4</color>
+<color name="c7FFFD4">#7FFFD4</color>
+
+<color name="Maroon">#800000</color>
+<color name="c800000">#800000</color>
+
+<color name="Purple">#800080</color>
+<color name="c800080">#800080</color>
+
+<color name="Olive">#808000</color>
+<color name="c808000">#808000</color>
+
+<color name="Gray">#808080</color>
+<color name="Grey">#808080</color>
+<color name="c808080">#808080</color>
+
+<color name="SkyBlue">#87CEEB</color>
+<color name="c87CEEB">#87CEEB</color>
+
+<color name="LightSkyBlue">#87CEFA</color>
+<color name="c87CEFA">#87CEFA</color>
+
+<color name="BlueViolet">#8A2BE2</color>
+<color name="c8A2BE2">#8A2BE2</color>
+
+<color name="DarkRed">#8B0000</color>
+<color name="c8B0000">#8B0000</color>
+
+<color name="DarkMagenta">#8B008B</color>
+<color name="c8B008B">#8B008B</color>
+
+<color name="SaddleBrown">#8B4513</color>
+<color name="c8B4513">#8B4513</color>
+
+<color name="DarkSeaGreen">#8FBC8F</color>
+<color name="c8FBC8F">#8FBC8F</color>
+
+<color name="LightGreen">#90EE90</color>
+<color name="c90EE90">#90EE90</color>
+
+<color name="MediumPurple">#9370DB</color>
+<color name="c9370DB">#9370DB</color>
+
+<color name="DarkViolet">#9400D3</color>
+<color name="c9400D3">#9400D3</color>
+
+<color name="PaleGreen">#98FB98</color>
+<color name="c98FB98">#98FB98</color>
+
+<color name="DarkOrchid">#9932CC</color>
+<color name="c9932CC">#9932CC</color>
+
+<color name="YellowGreen">#9ACD32</color>
+<color name="c9ACD32">#9ACD32</color>
+
+<color name="Sienna">#A0522D</color>
+<color name="cA0522D">#A0522D</color>
+
+<color name="Brown">#A52A2A</color>
+<color name="cA52A2A">#A52A2A</color>
+
+<color name="DarkGray">#A9A9A9</color>
+<color name="DarkGrey">#A9A9A9</color>
+<color name="cA9A9A9">#A9A9A9</color>
+
+<color name="LightBlue">#ADD8E6</color>
+<color name="cADD8E6">#ADD8E6</color>
+
+<color name="GreenYellow">#ADFF2F</color>
+<color name="cADFF2F">#ADFF2F</color>
+
+<color name="PaleTurquoise">#AFEEEE</color>
+<color name="cAFEEEE">#AFEEEE</color>
+
+<color name="LightSteelBlue">#B0C4DE</color>
+<color name="cB0C4DE">#B0C4DE</color>
+
+<color name="PowderBlue">#B0E0E6</color>
+<color name="cB0E0E6">#B0E0E6</color>
+
+<color name="FireBrick">#B22222</color>
+<color name="cB22222">#B22222</color>
+
+<color name="DarkGoldenRod">#B8860B</color>
+<color name="cB8860B">#B8860B</color>
+
+<color name="MediumOrchid">#BA55D3</color>
+<color name="cBA55D3">#BA55D3</color>
+
+<color name="RosyBrown">#BC8F8F</color>
+<color name="cBC8F8F">#BC8F8F</color>
+
+<color name="DarkKhaki">#BDB76B</color>
+<color name="cBDB76B">#BDB76B</color>
+
+<color name="Silver">#C0C0C0</color>
+<color name="cC0C0C0">#C0C0C0</color>
+
+<color name="MediumVioletRed">#C71585</color>
+<color name="cC71585">#C71585</color>
+
+<color name="IndianRed ">#CD5C5C</color>
+<color name="cCD5C5C">#CD5C5C</color>
+
+<color name="Peru">#CD853F</color>
+<color name="cCD853F">#CD853F</color>
+
+<color name="Chocolate">#D2691E</color>
+<color name="cD2691E">#D2691E</color>
+
+<color name="Tan">#D2B48C</color>
+<color name="cD2B48C">#D2B48C</color>
+
+<color name="LightGray">#D3D3D3</color>
+<color name="LightGrey">#D3D3D3</color>
+<color name="cD3D3D3">#D3D3D3</color>
+
+<color name="Thistle">#D8BFD8</color>
+<color name="cD8BFD8">#D8BFD8</color>
+
+<color name="Orchid">#DA70D6</color>
+<color name="cDA70D6">#DA70D6</color>
+
+<color name="GoldenRod">#DAA520</color>
+<color name="cDAA520">#DAA520</color>
+
+<color name="PaleVioletRed">#DB7093</color>
+<color name="cDB7093">#DB7093</color>
+
+<color name="Crimson">#DC143C</color>
+<color name="cDC143C">#DC143C</color>
+
+<color name="Gainsboro">#DCDCDC</color>
+<color name="cDCDCDC">#DCDCDC</color>
+
+<color name="Plum">#DDA0DD</color>
+<color name="cDDA0DD">#DDA0DD</color>
+
+<color name="BurlyWood">#DEB887</color>
+<color name="cDEB887">#DEB887</color>
+
+<color name="LightCyan">#E0FFFF</color>
+<color name="cE0FFFF">#E0FFFF</color>
+
+<color name="Lavender">#E6E6FA</color>
+<color name="cE6E6FA">#E6E6FA</color>
+
+<color name="DarkSalmon">#E9967A</color>
+<color name="cE9967A">#E9967A</color>
+
+<color name="Violet">#EE82EE</color>
+<color name="cEE82EE">#EE82EE</color>
+
+<color name="PaleGoldenRod">#EEE8AA</color>
+<color name="cEEE8AA">#EEE8AA</color>
+
+<color name="LightCoral">#F08080</color>
+<color name="cF08080">#F08080</color>
+
+<color name="Khaki">#F0E68C</color>
+<color name="cF0E68C">#F0E68C</color>
+
+<color name="AliceBlue">#F0F8FF</color>
+<color name="cF0F8FF">#F0F8FF</color>
+
+<color name="HoneyDew">#F0FFF0</color>
+<color name="cF0FFF0">#F0FFF0</color>
+
+<color name="Azure">#F0FFFF</color>
+<color name="cF0FFFF">#F0FFFF</color>
+
+<color name="SandyBrown">#F4A460</color>
+<color name="cF4A460">#F4A460</color>
+
+<color name="Wheat">#F5DEB3</color>
+<color name="cF5DEB3">#F5DEB3</color>
+
+<color name="Beige">#F5F5DC</color>
+<color name="cF5F5DC">#F5F5DC</color>
+
+<color name="WhiteSmoke">#F5F5F5</color>
+<color name="cF5F5F5">#F5F5F5</color>
+
+<color name="MintCream">#F5FFFA</color>
+<color name="cF5FFFA">#F5FFFA</color>
+
+<color name="GhostWhite">#F8F8FF</color>
+<color name="cF8F8FF">#F8F8FF</color>
+
+<color name="Salmon">#FA8072</color>
+<color name="cFA8072">#FA8072</color>
+
+<color name="AntiqueWhite">#FAEBD7</color>
+<color name="cFAEBD7">#FAEBD7</color>
+
+<color name="Linen">#FAF0E6</color>
+<color name="cFAF0E6">#FAF0E6</color>
+
+<color name="LightGoldenRodYellow">#FAFAD2</color>
+<color name="cFAFAD2">#FAFAD2</color>
+
+<color name="OldLace">#FDF5E6</color>
+<color name="cFDF5E6">#FDF5E6</color>
+
+<color name="Red">#FF0000</color>
+<color name="cFF0000">#FF0000</color>
+
+<color name="Fuchsia">#FF00FF</color>
+<color name="Magenta">#FF00FF</color>
+<color name="cFF00FF">#FF00FF</color>
+
+<color name="DeepPink">#FF1493</color>
+<color name="cFF1493">#FF1493</color>
+
+<color name="OrangeRed">#FF4500</color>
+<color name="cFF4500">#FF4500</color>
+
+<color name="Tomato">#FF6347</color>
+<color name="cFF6347">#FF6347</color>
+
+<color name="HotPink">#FF69B4</color>
+<color name="cFF69B4">#FF69B4</color>
+
+<color name="Coral">#FF7F50</color>
+<color name="cFF7F50">#FF7F50</color>
+
+<color name="DarkOrange">#FF8C00</color>
+<color name="cFF8C00">#FF8C00</color>
+
+<color name="LightSalmon">#FFA07A</color>
+<color name="cFFA07A">#FFA07A</color>
+
+<color name="Orange">#FFA500</color>
+<color name="cFFA500">#FFA500</color>
+
+<color name="LightPink">#FFB6C1</color>
+<color name="cFFB6C1">#FFB6C1</color>
+
+<color name="Pink">#FFC0CB</color>
+<color name="cFFC0CB">#FFC0CB</color>
+
+<color name="Gold">#FFD700</color>
+<color name="cFFD700">#FFD700</color>
+
+<color name="PeachPuff">#FFDAB9</color>
+<color name="cFFDAB9">#FFDAB9</color>
+
+<color name="NavajoWhite">#FFDEAD</color>
+<color name="cFFDEAD">#FFDEAD</color>
+
+<color name="Moccasin">#FFE4B5</color>
+<color name="cFFE4B5">#FFE4B5</color>
+
+<color name="Bisque">#FFE4C4</color>
+<color name="cFFE4C4">#FFE4C4</color>
+
+<color name="MistyRose">#FFE4E1</color>
+<color name="cFFE4E1">#FFE4E1</color>
+
+<color name="BlanchedAlmond">#FFEBCD</color>
+<color name="cFFEBCD">#FFEBCD</color>
+
+<color name="PapayaWhip">#FFEFD5</color>
+<color name="cFFEFD5">#FFEFD5</color>
+
+<color name="LavenderBlush">#FFF0F5</color>
+<color name="cFFF0F5">#FFF0F5</color>
+
+<color name="SeaShell">#FFF5EE</color>
+<color name="cFFF5EE">#FFF5EE</color>
+
+<color name="Cornsilk">#FFF8DC</color>
+<color name="cFFF8DC">#FFF8DC</color>
+
+<color name="LemonChiffon">#FFFACD</color>
+<color name="cFFFACD">#FFFACD</color>
+
+<color name="FloralWhite">#FFFAF0</color>
+<color name="cFFFAF0">#FFFAF0</color>
+
+<color name="Snow">#FFFAFA</color>
+<color name="cFFFAFA">#FFFAFA</color>
+
+<color name="Yellow">#FFFF00</color>
+<color name="cFFFF00">#FFFF00</color>
+
+<color name="LightYellow">#FFFFE0</color>
+<color name="cFFFFE0">#FFFFE0</color>
+
+<color name="Ivory">#FFFFF0</color>
+<color name="cFFFFF0">#FFFFF0</color>
+
+<color name="White">#FFFFFF</color>
+<color name="cFFFFFF">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="100dp"    
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/picture" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+        <ImageButton
+			android:background="@color/White"
+            android:id="@+id/btn_prev"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/previous" 
+            android:padding="5dp"
+            />
+		<ImageButton
+			android:background="@color/White"
+            android:id="@+id/btn_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pause_play" 
+            android:padding="5dp"
+            />
+        <ImageButton
+			android:background="@color/White"
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/skip" 
+            android:padding="5dp"
+            />
+        <ImageButton
+			android:background="@color/White"
+            android:id="@+id/btn_exit"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/close"
+            android:padding="5dp"
+            />
+        		
+		    	    
+		</LinearLayout>   
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/tvTitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="0dp"
+		        android:text="Title:"
+		        android:maxLines="1"
+				android:ellipsize="end"
+				android:textSize="14sp"
+		        />
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="Status:" 
+		        android:maxLines="1"
+				android:ellipsize="end"
+				android:textSize="10sp"
+		        />
+		    		    	    
+		</LinearLayout>    
+	</LinearLayout>
+</LinearLayout>
