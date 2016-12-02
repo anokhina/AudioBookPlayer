@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.EmptyStackException;
 import java.util.List;
-import java.util.Stack;
+import java.util.LinkedList;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -44,21 +44,43 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class DirActivity extends ListActivity {
-    public static String RET_PARAM = "ret_param";
-    public static String IN_PARAM = "in_param";
-    public static String FILE_NAME_COVER = "Info/Image/Cover.jpg";
-    public static String FILE_NAME_BOOK = "Book";
-    public static String FILE_NAME_ICON = ".icon";
-    public static String[] FILE_NAME_ICON_EXT = {"", ".png", ".jpg", ".gif"};
-    public static String FILE_UPDIR_LABEL = "..";
-    public static String FILE_ROOTDIR_LABEL = "/";
-    public static String FILE_LAST_LABEL = "[LAST]";
+	public static final int MAX_STACK_SIZE = 15;
+    public static final String RET_PARAM = "ret_param";
+    public static final String IN_PARAM = "in_param";
+    public static final String FILE_NAME_COVER = "Info/Image/Cover.jpg";
+    public static final String FILE_NAME_BOOK = "Book";
+    public static final String FILE_NAME_ICON = ".icon";
+    public static final String[] FILE_NAME_ICON_EXT = {"", ".png", ".jpg", ".gif"};
+    public static final String FILE_UPDIR_LABEL = "..";
+    public static final String FILE_ROOTDIR_LABEL = "/";
+    public static final String FILE_LAST_LABEL = "[LAST]";
     
     private Bitmap houseBitmap;
     private Bitmap lastBitmap;
-    private Stack<String> folderNames;
-    private Stack<Integer> folderPos;
+    private LimitedLinkedList<String> folderNames;
+    private LimitedLinkedList<Integer> folderPos;
     private boolean buttonInList;
+    
+    static class LimitedLinkedList<E> extends LinkedList<E> {
+    	private final int maxSize;
+    	
+    	public LimitedLinkedList(int size) {
+    		this.maxSize = size;
+    	}
+
+		public int getMaxSize() {
+			return maxSize;
+		}
+		
+		@Override
+	    public void push(E e) {
+			super.push(e);
+			if (size() > maxSize) {
+				removeLast();
+			}
+	    }
+		
+    }
 
     static class MyArrayAdapter extends ArrayAdapter<DirInfo> {
         private int itemLayout;
@@ -98,8 +120,8 @@ public class DirActivity extends ListActivity {
         houseBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.house);
         lastBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.recent);
         lastOpened = new ArrayList<>();
-        folderNames = new Stack<>();
-        folderPos = new Stack<>();
+        folderNames = new LimitedLinkedList<>(MAX_STACK_SIZE);
+        folderPos = new LimitedLinkedList<>(MAX_STACK_SIZE);
 
         File externalStore = Environment.getExternalStorageDirectory();
         Bundle extra = getIntent().getExtras();
