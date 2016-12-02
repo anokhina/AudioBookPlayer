@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ListView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:id="@android:id/list"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+        >
+	    <ImageButton 
+	        android:layout_width="64dp" 
+	        android:layout_height="match_parent" 
+	        android:layout_gravity="center_horizontal"
+	        android:text="Home Dir" 
+	        android:src="@drawable/house"
+	        android:onClick="onClickGoHome"
+	        android:id="@+id/btnHome"/>
+	    <ImageButton 
+	        android:layout_width="64dp" 
+	        android:layout_height="match_parent" 
+	        android:layout_gravity="center_horizontal"
+	        android:text="Last" 
+	        android:src="@drawable/recent"
+	        android:onClick="onClickGoHome"
+	        android:id="@+id/btnLast"/>
+	    <Button 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center_horizontal"
+	        android:text=".." 
+	        android:onClick="onClickGoHome"
+	        android:id="@+id/btnPrev"/>
+
+	    <Button
+	        android:id="@+id/btnBack"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:onClick="onClickGoHome"
+	        android:text="&lt;-" />
+	    	    	    
+	    <ImageButton 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:text="Cancel" 
+	        android:src="@drawable/home"
+	        android:onClick="onClickGoHome"
+	        android:id="@+id/btnCancel"/>
+        
+    </LinearLayout>
+</LinearLayout>
