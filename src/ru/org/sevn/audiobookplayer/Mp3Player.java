@@ -308,11 +308,21 @@ public class Mp3Player implements ChangeStateListener {
 	            MediaMetadataRetriever mmr = new MediaMetadataRetriever();
 	            mmr.setDataSource(selectedFile.getAbsolutePath());
 	            
-	            getAppSettings().setTitle(mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE));
+	            getAppSettings().setPlayingName(BookInfo.getRelativeFileName(getAppSettings().getPlayingDirPath(), selectedFile));
+	            
+	            //DONT USE. raises fatal error in VM for wrong file tags
+	            //getAppSettings().setTitle(mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE));
+	            String titlePrefix = "";
+	            if (getAppSettings().getPlayingDirPath() != null) {
+	            	File fl = new File(getAppSettings().getPlayingDirPath());
+	            	titlePrefix = fl.getName();
+	            	if("book".equals(titlePrefix.toLowerCase()) && fl.getParentFile() != null) {
+	            		titlePrefix = fl.getParentFile().getName();
+	            	}
+	            }
+	            getAppSettings().setTitle(titlePrefix + ":" + selectedFile.getName());
 	            getAppSettings().setImage(mmr.getEmbeddedPicture());
 	            
-	            appSettings.setPlayingName(BookInfo.getRelativeFileName(getAppSettings().getPlayingDirPath(), selectedFile));
-            
                 toRunOnPrepare = aPlay;
                 mediaPlayer.prepare(selectedFile.getAbsolutePath());
                 return true;
