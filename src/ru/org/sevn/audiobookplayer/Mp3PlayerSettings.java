@@ -72,7 +72,7 @@ public class Mp3PlayerSettings {
     			int rem2 = lastBooks.size() - 15;
 	    		if (rem2 > 0) {
 	    			
-	    	    	for (String key : lastBooks.keySet()) {
+	    	    	for (String key : new ArrayList<String>(lastBooks.keySet())) {
 	    	    		if(rem2>0) {
 	    	    			lastBooks.remove(key);
 	    	    		} else {
